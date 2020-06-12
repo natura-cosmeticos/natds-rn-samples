@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
-import { Platform } from 'react-native';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import * as Font from 'expo-font';
 import { ThemeProvider } from 'styled-components/native';
 import { tokens } from '@naturacosmeticos/natds-styles';
 import { buildTheme } from '@naturacosmeticos/natds-rn';
 import { Button } from '@naturacosmeticos/natds-rn';
+import { loadFontsForWeb } from './SnackHelpers';
 
 export default function Main() {
-  const theme = buildTheme('avon', 'light');
+  /**
+   * You can change the brand and mode here to preview different color themes
+   * 
+   * brands: natura | avon | theBodyShop
+   * modes: light | dark
+   * 
+   * edit here:
+   */
+  const brand = 'avon'
+  const mode = 'light'
+
+  const theme = buildTheme(brand, mode);
   const [isFontLoaded, fontsLoaded] = useState(false);
 
-  // load fonts to preview this snack on the browser correctly
-  loadFontsForWeb(isFontLoaded, fontsLoaded);
+  useEffect(() => {
+    // load fonts to preview this snack on the browser correctly
+    loadFontsForWeb(isFontLoaded, fontsLoaded);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -26,24 +38,13 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.button}>Button sample</Text>
-      <Button onPress={onPress} text="default" type="contained" />
+      <Text>Button sample</Text>
+      <View style={styles.row}>
+        <Button onPress={onPress} text="default" type="outlined" />
+        <Button onPress={onPress} text="default" type="contained" />
+      </View>
     </View>
   );
-}
-
-const loadFontsForWeb = async (isFontLoaded, fontsLoaded) => {
-  // natds-rn is uses the standard system font for ios and android
-  // but in the browser we dont have those fonts available so have to install it
-
-  if (Platform.OS === 'web' && !isFontLoaded) {
-    const something = await Font.loadAsync({
-      'Roboto-Bold': require('./node_modules/@naturacosmeticos/natds-rn/build/lib/assets/fonts/Roboto-Bold.ttf'),
-      'Roboto-Regular': require('./node_modules/@naturacosmeticos/natds-rn/build/lib/assets/fonts/Roboto-Regular.ttf'),
-    });
-  }
-
-  fontsLoaded(true);
 }
 
 const styles = StyleSheet.create({
@@ -53,7 +54,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  button: {
-    marginBottom: 10
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    padding: 20,
   }
 });
