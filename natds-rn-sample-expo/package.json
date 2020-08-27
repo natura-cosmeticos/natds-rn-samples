@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@naturacosmeticos/natds-rn": "2.1.0-DSY-778.3",
+    "@naturacosmeticos/natds-rn": "^2.2.1-DSY-999.0",
     "expo": "~37.0.3",
     "expo-font": "~8.1.0",
     "react": "~16.9.0",

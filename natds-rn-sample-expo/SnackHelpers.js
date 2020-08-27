@@ -5,10 +5,10 @@ export const loadFontsForWeb = async (isFontLoaded, fontsLoaded) => {
   // natds-rn is uses the standard system font for ios and android
   // but in the browser we dont have those fonts available so have to install it
 
-  if (Platform.OS === 'web' && !isFontLoaded) {
+  if (!isFontLoaded) {
     const something = await Font.loadAsync({
-      'Roboto-Bold': require('./assets/Roboto-Bold.ttf'),
-      'Roboto-Regular': require('./assets/Roboto-Regular.ttf'),
+      'Roboto': require('./assets/Roboto-Bold.ttf'),
+      'natds-icons': 'https://cdn.jsdelivr.net/npm/@naturacosmeticos/natds-icons/dist/fonts/natds-icons.ttf'
     });
   }
 

@@ -1077,11 +1077,17 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@naturacosmeticos/natds-rn@2.1.0-DSY-778.3":
-  version "2.1.0-DSY-778.3"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-rn/-/natds-rn-2.1.0-DSY-778.3.tgz#f5236868299c0fe89228bf9de45360d4cfce86c9"
-  integrity sha512-ZrWbcEJC8N4utbY/Wi+wXt/3FD9btcd9FJwyoNfBR5rtBMGsYGuN0+DXeAUQC1NJiw0bK4jJlXexeXlbDKv+Sw==
+"@naturacosmeticos/natds-icons@0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.17.0.tgz#093ced8370a7fc040d8157dc2b0829f0dffd9806"
+  integrity sha512-DjBsFhOMocYccTbtbFW+JD6NSKGofm+odKm1blq9V2yEOL58+rFwlR+RelTIjel8ESVcHwQtgYKQy8YC7BerfQ==
+
+"@naturacosmeticos/natds-rn@^2.2.1-DSY-999.0":
+  version "2.2.1-DSY-999.0"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-rn/-/natds-rn-2.2.1-DSY-999.0.tgz#b60d9394abbb8d14c2bfba7777e64327a199841c"
+  integrity sha512-ra7RjCom5lTTtffu/7cEvpwNv0hpb5dD/xwutqGv/tnQ2UwRRaCyXLhMzqevxARwH894CNB7v316S2qAbd7hLQ==
   dependencies:
+    "@naturacosmeticos/natds-icons" "0.17.0"
     "@naturacosmeticos/natds-styles" "0.5.5"
     react-native-gesture-handler "1.6.0"
 
