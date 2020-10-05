@@ -8,8 +8,8 @@ const App = () => {
   return (
     <SafeAreaView>
       <ScrollView contentContainerStyle={styles.container}>
-        {Object.keys(iconNames).map((icon) => (
-          <View style={styles.iconWrapper}>
+        {Object.keys(iconNames).map((icon, i) => (
+          <View key={i} style={styles.iconWrapper}>
             <Icon name={icon} />
             <Caption style={styles.caption}>{icon}</Caption>
           </View>
