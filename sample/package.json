@@ -7,7 +7,12 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build-android-bundle": "react-native bundle  --entry-file='index.js' --bundle-output='android/rn-sample-android-lib/src/main/assets/index.android.bundle' --dev=false --platform='android'  --assets-dest='android/rn-sample-android-lib/src/main/res'",
+    "clear-android-fonts": "rm -r android/rn-sample-android-lib/src/main/assets/fonts",
+    "copy-android-fonts": "cp -a android/app/src/main/assets/fonts android/rn-sample-android-lib/src/main/assets/fonts",
+    "update-android-fonts": "yarn clear-android-fonts && yarn copy-android-fonts",
+    "generate-aar": "yarn update-android-fonts && cd android && ./gradlew :rn-sample-android-lib:assembleRelease"
   },
   "dependencies": {
     "@naturacosmeticos/natds-rn": "^3.0.0",
