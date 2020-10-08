@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build-ios-bundle": "react-native bundle --entry-file='index.js' --bundle-output='./ios/rn-sample-ios-lib/Resources/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios/rn-sample-ios-lib/Resources/'",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
