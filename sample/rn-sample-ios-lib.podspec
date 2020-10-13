@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
     s.license      = "ISC"
     s.author       = { "Squad DS" => "" }
     s.source       = { :git => "git@github.com:natura-cosmeticos/natds-rn-samples.git", :branch => 'rn-sample-icons', :tag => s.version.to_s }
-    s.source_files = "ios/sample/**/*.{swift,h,m}"
+    s.source_files = "ios/rn-sample-ios-lib/**/*.{swift,h,m}"
     s.ios.deployment_target  = '10.0'
 
     s.resources = [
-      'ios/rn-sample-ios-lib/Resources'
+      'ios/rn-sample-ios-lib/Resources/*'
     ]
 
     s.exclude_files = [
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
       'ios/sampleTests/',
       'ios/rn-sample-ios-libTests/',
       'ios/rn-sample-ios-lib/Resources/Info.plist',
-      'ios/sample-ios/',
+      'ios/ios-sample/',
     ]
   
     s.dependency 'React'
@@ -36,7 +36,5 @@ Pod::Spec.new do |s|
     s.dependency 'React-RCTText'
     s.dependency 'React-RCTVibration'
     s.dependency 'React-Core/RCTWebSocket'
-
-    s.dependency '@naturacosmeticos/natds-rn', '~> 3.0.0'
-
+  
   end

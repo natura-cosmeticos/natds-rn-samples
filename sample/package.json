@@ -3,17 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build-ios-bundle": "react-native bundle --entry-file='index.js' --bundle-output='./ios/rn-sample-ios-lib/Resources/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios/rn-sample-ios-lib/Resources/'",
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint .",
     "build-android-bundle": "react-native bundle  --entry-file='index.js' --bundle-output='android/rn-sample-android-lib/src/main/assets/index.android.bundle' --dev=false --platform='android'  --assets-dest='android/rn-sample-android-lib/src/main/res'",
     "clear-android-fonts": "rm -r android/rn-sample-android-lib/src/main/assets/fonts",
     "copy-android-fonts": "cp -a android/app/src/main/assets/fonts android/rn-sample-android-lib/src/main/assets/fonts",
     "update-android-fonts": "yarn clear-android-fonts && yarn copy-android-fonts",
-    "generate-aar": "yarn update-android-fonts && cd android && ./gradlew :rn-sample-android-lib:assembleRelease"
+    "generate-aar": "yarn update-android-fonts && cd android && ./gradlew :rn-sample-android-lib:assembleRelease",
+    "ios": "react-native run-ios",
+    "ios:build:bundle": "react-native bundle --entry-file='index.js' --bundle-output='./ios/rn-sample-ios-lib/Resources/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios/rn-sample-ios-lib/Resources/'",
+    "ios:fonts:clear": "rm -r ios/rn-sample-ios-lib/Resources/assets/fonts",
+    "ios:fonts:copy:icons": "cp -a node_modules/@naturacosmeticos/natds-icons/dist/fonts ios/rn-sample-ios-lib/Resources/assets/",
+    "ios:fonts:update": "yarn ios:fonts:clear && yarn ios:fonts:copy",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@naturacosmeticos/natds-rn": "^3.0.0",

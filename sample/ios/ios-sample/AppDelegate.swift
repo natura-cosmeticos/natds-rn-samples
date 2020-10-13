@@ -1,17 +1,15 @@
 //
 //  AppDelegate.swift
-//  sample-ios
+//  ios-sample
 //
-//  Created by Raoni Valadares on 08/10/20.
+//  Created by Raoni Valadares on 09/10/20.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-//  var appType: AppBuilder.UIApplicationType = .singleViewController
-//  var notebookParameters = AppBuilder.buildParameters()
-//  var window: UIWindow?
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -28,10 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-
-//      self.window = UIWindow(frame: UIScreen.main.bounds)
-//      self.window?.rootViewController = AppBuilder.build(self.appType)
-//      self.window?.makeKeyAndVisible()
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+
+
 }
 
