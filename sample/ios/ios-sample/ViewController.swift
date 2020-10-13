@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  sample-ios
+//  ios-sample
 //
-//  Created by Raoni Valadares on 08/10/20.
+//  Created by Raoni Valadares on 09/10/20.
 //
 
 import UIKit
