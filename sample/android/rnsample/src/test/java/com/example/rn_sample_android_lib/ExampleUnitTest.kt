@@ -1,4 +1,4 @@
-package com.example.rn_sample_android_lib
+package com.example.rnsample
 
 import org.junit.Test
 
