@@ -1042,7 +1042,7 @@
     "@naturacosmeticos/natds-themes" "^0.4.1"
     react-native-gesture-handler "1.6.0"
 
-"@naturacosmeticos/natds-themes@0.4.8", "@naturacosmeticos/natds-themes@^0.4.1":
+"@naturacosmeticos/natds-themes@^0.4.1":
   version "0.4.8"
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-themes/-/natds-themes-0.4.8.tgz#ededfbdb19eecd2a980456b505406c5fc26f3568"
   integrity sha512-o4KVTaUQeNl2s1WWQf5aqZy8vhtdtu+BG7DzQ4DiDDb2qoU2i/jsDA/Rny1/IK8t+FwndUuACRnTuBuXDqb5OQ==
