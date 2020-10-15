@@ -11,15 +11,15 @@ Pod::Spec.new do |s|
     s.ios.deployment_target  = '10.0'
 
     s.resources = [
-      'ios/rn-sample-ios-lib/Resources/*'
+      'sample/ios/rn-sample-ios-lib/Resources/*'
     ]
 
     s.exclude_files = [
-      'ios/sample/',
-      'ios/sampleTests/',
-      'ios/rn-sample-ios-libTests/',
-      'ios/rn-sample-ios-lib/Resources/Info.plist',
-      'ios/ios-sample/',
+      'sample/ios/sample/',
+      'sample/ios/sampleTests/',
+      'sample/ios/rn-sample-ios-libTests/',
+      'sample/ios/rn-sample-ios-lib/Resources/Info.plist',
+      'sample/ios/ios-sample/',
     ]
   
     s.dependency 'React'
