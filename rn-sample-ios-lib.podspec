@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.license      = "ISC"
     s.author       = { "Squad DS" => "" }
     s.source       = { :git => "git@github.com:natura-cosmeticos/natds-rn-samples.git", :branch => 'rn-sample-icons', :tag => s.version.to_s }
-    s.source_files = "ios/rn-sample-ios-lib/**/*.{swift,h,m}"
+    s.source_files = "sample/ios/rn-sample-ios-lib/**/*.{swift,h,m}"
     s.ios.deployment_target  = '10.0'
 
     s.resources = [
