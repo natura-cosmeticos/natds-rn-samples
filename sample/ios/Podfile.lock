@@ -290,7 +290,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - rn-sample-ios-lib (from `../`)
+  - rn-sample-ios-lib (from `../../`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -349,7 +349,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   rn-sample-ios-lib:
-    :path: "../"
+    :path: "../../"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -380,9 +380,9 @@ SPEC CHECKSUMS:
   React-RCTText: 65a6de06a7389098ce24340d1d3556015c38f746
   React-RCTVibration: 8e9fb25724a0805107fc1acc9075e26f814df454
   ReactCommon: 4167844018c9ed375cc01a843e9ee564399e53c3
-  rn-sample-ios-lib: f30d986b1d0fe6d55f010aa6bda8f46babf34bc6
+  rn-sample-ios-lib: a8790e20d66b7a29da419f8db39c6480aad32753
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
 
-PODFILE CHECKSUM: a6c821d6bcbf2a67e1cbee507d6f10acae579d59
+PODFILE CHECKSUM: f9e510d27bea8fbb37b76132caeb664d1481465d
 
 COCOAPODS: 1.9.3

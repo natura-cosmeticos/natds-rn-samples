@@ -34,5 +34,5 @@ end
 
 target 'ios-sample' do
   react_native_dependencies
-  pod 'rn-sample-ios-lib', :path => "../"
+  pod 'rn-sample-ios-lib', :path => "../../"
 end
