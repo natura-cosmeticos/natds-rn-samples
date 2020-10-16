@@ -9,10 +9,10 @@ const App = () => {
     <SafeAreaView>
       <ScrollView contentContainerStyle={styles.container}>
         {Object.keys(iconNames).map((icon, i) => (
-          <View key={i} style={styles.iconWrapper}>
-            <Icon name={icon} />
+          <IconWrapper key={i}>
+            <Icon name={icon} size="semi" color="highEmphasis" />
             <Caption style={styles.caption}>{icon}</Caption>
-          </View>
+          </IconWrapper>
         ))}
       </ScrollView>
     </SafeAreaView>
@@ -25,19 +25,19 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'center',
   },
-  iconWrapper: {
-    margin: 8,
-    flexBasis: 160,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  caption: {
-    textAlign: 'center',
-  },
 });
 
 const Caption = styled.Text`
   ${(props) => props.theme.caption};
+  color: ${(props) => props.theme.color.highEmphasis};
+  text-align: center;
+`;
+
+const IconWrapper = styled.View`
+  margin-vertical: ${(props) => props.theme.size.small};
+  flex-basis: ${(props) => props.theme.size.hugeXXX};
+  justify-content: center;
+  align-items: center;
 `;
 
 export default App;
