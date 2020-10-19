@@ -34,8 +34,8 @@ const Caption = styled.Text`
 `;
 
 const IconWrapper = styled.View`
-  margin-vertical: ${(props) => props.theme.size.small};
-  flex-basis: ${(props) => props.theme.size.hugeXXX};
+  margin-vertical: ${(props) => props.theme.size.small}px;
+  flex-basis: ${(props) => props.theme.size.hugeXXX}px;
   justify-content: center;
   align-items: center;
 `;
