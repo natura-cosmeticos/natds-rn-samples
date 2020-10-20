@@ -20,6 +20,10 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A1B871A4A48FDF085ED3E5C2 /* libPods-sampleTS-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A5E9A6504465B721BC7755 /* libPods-sampleTS-tvOSTests.a */; };
 		F9B7C507573E0FFA9687A0A6 /* libPods-sampleTS-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3413D4A727D2DF83BB68C7 /* libPods-sampleTS-tvOS.a */; };
+		4FD9079CB8E34EB4BA015BE7 /* natds-icons.svg in Resources */ = {isa = PBXBuildFile; fileRef = B10C40FD28964267B661A98B /* natds-icons.svg */; };
+		2C5BEE64DEF7475B8BA3D050 /* natds-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4424D244CB5F413082050523 /* natds-icons.ttf */; };
+		0378CF25AB374E78A537B96B /* natds-icons.woff in Resources */ = {isa = PBXBuildFile; fileRef = 4589D647EC3B4F229E70EB25 /* natds-icons.woff */; };
+		E6130B7D78DF4B118A7E58B4 /* natds-icons.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE7489587741B1865C0136 /* natds-icons.woff2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FBA321217050EFB9C1CF1E0B /* Pods-sampleTS-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTS-tvOS.release.xcconfig"; path = "Target Support Files/Pods-sampleTS-tvOS/Pods-sampleTS-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		FC526E2741C63837B1D515C0 /* Pods-sampleTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTS.release.xcconfig"; path = "Target Support Files/Pods-sampleTS/Pods-sampleTS.release.xcconfig"; sourceTree = "<group>"; };
+		B10C40FD28964267B661A98B /* natds-icons.svg */ = {isa = PBXFileReference; name = "natds-icons.svg"; path = "../node_modules/@naturacosmeticos/natds-icons/dist/fonts/natds-icons.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4424D244CB5F413082050523 /* natds-icons.ttf */ = {isa = PBXFileReference; name = "natds-icons.ttf"; path = "../node_modules/@naturacosmeticos/natds-icons/dist/fonts/natds-icons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4589D647EC3B4F229E70EB25 /* natds-icons.woff */ = {isa = PBXFileReference; name = "natds-icons.woff"; path = "../node_modules/@naturacosmeticos/natds-icons/dist/fonts/natds-icons.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5AEE7489587741B1865C0136 /* natds-icons.woff2 */ = {isa = PBXFileReference; name = "natds-icons.woff2"; path = "../node_modules/@naturacosmeticos/natds-icons/dist/fonts/natds-icons.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BD8297D81AF13A545B3A1355 /* Pods */,
+				37813B2D72EE46C2934E2633 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +206,18 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		37813B2D72EE46C2934E2633 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B10C40FD28964267B661A98B /* natds-icons.svg */,
+				4424D244CB5F413082050523 /* natds-icons.ttf */,
+				4589D647EC3B4F229E70EB25 /* natds-icons.woff */,
+				5AEE7489587741B1865C0136 /* natds-icons.woff2 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +363,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4FD9079CB8E34EB4BA015BE7 /* natds-icons.svg in Resources */,
+				2C5BEE64DEF7475B8BA3D050 /* natds-icons.ttf in Resources */,
+				0378CF25AB374E78A537B96B /* natds-icons.woff in Resources */,
+				E6130B7D78DF4B118A7E58B4 /* natds-icons.woff2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

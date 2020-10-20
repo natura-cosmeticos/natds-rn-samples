@@ -4,14 +4,27 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android:build:bundle": "react-native bundle  --entry-file='index.js' --bundle-output='android/rnsamplefixed/src/main/assets/index.android.bundle' --dev=false --platform='android'  --assets-dest='android/rnsamplefixed/src/main/res'",
+    "android:fonts:clear": "rm -r android/rnsamplefixed/src/main/assets/fonts",
+    "android:fonts:copy": "cp -a android/app/src/main/assets/fonts android/rnsamplefixed/src/main/assets/fonts",
+    "android:fonts:update": "yarn android:fonts:clear && yarn android:fonts:copy",
+    "android:generate:aar": "yarn android:fonts:update && cd android && ./gradlew :rnsamplefixed:assembleRelease",
     "ios": "react-native run-ios",
+    "ios:build:bundle": "react-native bundle --entry-file='index.js' --bundle-output='./ios/rn-sample-ios-lib/Resources/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios/rn-sample-ios-lib/Resources/'",
+    "ios:fonts:clear": "rm -r ios/rn-sample-ios-lib/Resources/assets/fonts",
+    "ios:fonts:copy": "cp -a node_modules/@naturacosmeticos/natds-icons/dist/fonts ios/rn-sample-ios-lib/Resources/assets/",
+    "ios:fonts:update": "yarn ios:fonts:clear && yarn ios:fonts:copy",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@naturacosmeticos/natds-icons": "0.14.0",
+    "@naturacosmeticos/natds-rn": "^3.0.0",
     "react": "16.13.1",
-    "react-native": "0.63.3"
+    "react-dom": "^16.13.1",
+    "react-native": "0.63.3",
+    "styled-components": "5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rnsamplefixed">
+
+    <application
+        android:name=".RNSampleFixedApplication">
+
+        <activity
+            android:name=".RNSampleFixedActivity"
+            android:label="Library"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    </application>
+</manifest>
