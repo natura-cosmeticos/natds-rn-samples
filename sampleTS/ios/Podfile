@@ -22,12 +22,3 @@ target 'sampleTS' do
     flipper_post_install(installer)
   end
 end
-
-target 'sampleTS-tvOS' do
-  # Pods for sampleTS-tvOS
-
-  target 'sampleTS-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-end
