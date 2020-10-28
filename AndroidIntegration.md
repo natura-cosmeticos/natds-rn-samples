@@ -8,7 +8,7 @@ Here we put together what we have learned in the process of developing this inte
 
 ### Enabling MultiDex
 
-As seen on the [oficial documentation for Android](https://developer.android.com/studio/build/multidex#mdex-gradle) we had to enable MultiDex to allow our app to build and read multiple DEX files and avoid the `"Too many field references"` error.
+As seen on the [official documentation for Android](https://developer.android.com/studio/build/multidex#mdex-gradle) we had to enable MultiDex to allow our app to build and read multiple DEX files and avoid the `"Too many field references"` error.
 
 That's because DEX files limits the total number of methods that can be referenced within it, including Android framework methods, library methods, and methods in your own code.
 
@@ -58,7 +58,7 @@ Test: remove this to see what happens
 ---
 ### Using Kotlin
 
-Because we used Kotlin when writting our files, we made the following modifications:
+Because we used Kotlin when writing our files, we made the following modifications:
 
 **1. In the top-level `build.gradle`, where you can add configuration options common to all sub-projects/modules, we added Kotlin as a dependency**
 <pre>
@@ -85,7 +85,7 @@ allprojects {
 ---
 ### Creating an Android library
 
-Quoting the [oficial documentation for Android](https://developer.android.com/studio/projects/android-library):
+Quoting the [official documentation for Android](https://developer.android.com/studio/projects/android-library):
 >An Android library is structurally the same as an Android app module. It can include everything needed to build an app, including source code, resource files, and an Android manifest. However, instead of compiling into an APK that runs on a device, an Android library compiles into an Android Archive (AAR) file that you can use as a dependency for an Android app module.
 
 So, because we want our module to be consumed as a dependency inside an Android Application, we need it to be an Android Library.
@@ -335,7 +335,7 @@ We used Yarn, but the same scripts can be used with NPM.
 ---
 ### Using @naturacosmeticos/natds-icons
 
-When using fonts with React Native, yout need a `react-native.config.js` file, where you manage dependencies using `react-native link`.
+When using fonts with React Native, you need a `react-native.config.js` file, where you manage dependencies using `react-native link`.
 <pre>
 <b>
 module.exports = {
