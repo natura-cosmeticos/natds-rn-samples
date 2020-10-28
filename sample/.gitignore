@@ -1,3 +1,7 @@
+android/app/src/main/assets/
+android/rnsamplefixed/src/main/assets/
+android/rnsamplefixed/src/main/res/
+
 # OSX
 #
 .DS_Store
