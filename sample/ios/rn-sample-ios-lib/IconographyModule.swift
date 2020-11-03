@@ -4,7 +4,6 @@ import React
 
 @objc public class IconographyModule: NSObject {
     public static var currentViewController: UIViewController?
-//    public static var delegate: NotebookModuleDelegate?
 
     @objc public static func getViewController() -> UIViewController? {
         return currentViewController
@@ -12,20 +11,16 @@ import React
 
     // MARK: - Initialization
 
-  public func start(fromViewController viewController: UIViewController
-//                    parameters: NotebookParameters
-//                    delegate: NotebookModuleDelegate
-  ) {
+  public func start(fromViewController viewController: UIViewController) {
         guard let bridge = RCTBridge(delegate: self, launchOptions: nil) else {
             return
         }
 
-    let reactView = self.buildReactView(bridge: bridge, parameters: .init())
+    let reactView = self.buildReactView(bridge: bridge)
         viewController.view.addSubview(reactView)
         self.setupConstraints(reactView, for: viewController)
 
         IconographyModule.currentViewController = viewController
-//        IconographyModule.delegate = delegate
     }
 }
 
@@ -46,12 +41,12 @@ extension IconographyModule: RCTBridgeDelegate {
 }
 
 protocol CodeReactView {
-    func buildReactView(bridge: RCTBridge, parameters: NotebookParameters) -> RCTRootView
+    func buildReactView(bridge: RCTBridge) -> RCTRootView
     func setupConstraints(_ reactView: RCTRootView, for viewController: UIViewController)
 }
 
 extension IconographyModule: CodeReactView {
-    func buildReactView(bridge: RCTBridge, parameters: NotebookParameters) -> RCTRootView {
+    func buildReactView(bridge: RCTBridge) -> RCTRootView {
       return RCTRootView(bridge: bridge, moduleName: "sample", initialProperties: nil)
     }
 
@@ -63,16 +58,4 @@ extension IconographyModule: CodeReactView {
         reactView.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor).isActive = true
         reactView.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor).isActive = true
     }
-}
-
-@objc public class NotebookParameters: NSObject {
-//    var jwt: String
-
-//    @objc public init(jwt: String) {
-//        self.jwt = jwt
-//    }
-
-//    public convenience init(jwt: String) {
-//        self.init(jwt: jwt)
-//    }
 }

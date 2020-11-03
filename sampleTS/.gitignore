@@ -2,6 +2,8 @@ android/app/src/main/assets/
 android/rnsamplefixed/src/main/assets/
 android/rnsamplefixed/src/main/res/
 
+ios/rn-sample-fixed-ios-lib/Resources/assets/
+
 # OSX
 #
 .DS_Store
