@@ -42,7 +42,7 @@ protocol CodeReactView {
 
 extension IconographyModule: CodeReactView {
     func buildReactView(bridge: RCTBridge) -> RCTRootView {
-      return RCTRootView(bridge: bridge, moduleName: "sample", initialProperties: nil)
+      return RCTRootView(bridge: bridge, moduleName: "sampleTS", initialProperties: nil)
     }
 
     func setupConstraints(_ reactView: RCTRootView, for viewController: UIViewController) {

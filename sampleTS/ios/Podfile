@@ -32,7 +32,7 @@ target 'rn-sample-fixed-ios-lib' do
   react_native_dependencies
 end
 
-#target 'ios-sample' do
-#  react_native_dependencies
-#  pod 'rn-sample-ios-lib', :path => "../../"
-#end
+target 'rn-sample-fixed' do
+  react_native_dependencies
+  pod 'rn-sample-fixed-ios-lib', :path => "../../"
+end

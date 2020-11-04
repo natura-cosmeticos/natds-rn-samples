@@ -245,6 +245,21 @@ PODS:
     - React-Core (= 0.63.3)
     - React-cxxreact (= 0.63.3)
     - React-jsi (= 0.63.3)
+  - rn-sample-fixed-ios-lib (1.0.0):
+    - React
+    - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-RCTActionSheet
+    - React-RCTAnimation
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
+    - React-RCTVibration
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -275,6 +290,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - rn-sample-fixed-ios-lib (from `../../`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -332,6 +348,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  rn-sample-fixed-ios-lib:
+    :path: "../../"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -362,8 +380,9 @@ SPEC CHECKSUMS:
   React-RCTText: 65a6de06a7389098ce24340d1d3556015c38f746
   React-RCTVibration: 8e9fb25724a0805107fc1acc9075e26f814df454
   ReactCommon: 4167844018c9ed375cc01a843e9ee564399e53c3
+  rn-sample-fixed-ios-lib: db4934b12a4c4226ca08e004ffe5242e48933c64
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
 
-PODFILE CHECKSUM: b113fcb764fc4a7fc440fb7b9acb51d0bc8ff8f7
+PODFILE CHECKSUM: ba24b7d4f911f210eca456157a96b5fff29cb30e
 
 COCOAPODS: 1.10.0
