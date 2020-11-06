@@ -1,5 +1,5 @@
 import UIKit
-import rn_sample_ios_lib
+import rn_sample_fixed_ios_lib
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -7,13 +7,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let scene = (scene as? UIWindowScene) else { return }
+      guard let scene = (scene as? UIWindowScene) else { return }
 
       let window = UIWindow(windowScene: scene)
       self.window = window
 
       SampleResourcesManager.registerFonts()
-      
+
       let viewController = UIViewController()
       IconographyModule().start(fromViewController: viewController)
 
