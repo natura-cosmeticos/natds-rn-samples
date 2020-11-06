@@ -2,8 +2,6 @@ android/app/src/main/assets/
 android/rnsamplefixed/src/main/assets/
 android/rnsamplefixed/src/main/res/
 
-ios/rn-sample-fixed-ios-lib/Resources/assets/
-
 # OSX
 #
 .DS_Store
@@ -61,9 +59,6 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
-
-# Bundle artifact
-*.jsbundle
 
 # CocoaPods
 /ios/Pods/
