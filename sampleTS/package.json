@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-icons": "0.14.0",
-    "@naturacosmeticos/natds-rn": "^3.0.0",
+    "@naturacosmeticos/natds-rn": "^3.0.1",
     "react": "16.13.1",
     "react-dom": "^16.13.1",
     "react-native": "0.63.3",

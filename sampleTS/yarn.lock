@@ -1028,10 +1028,10 @@
   resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-icons/-/natds-icons-0.17.0.tgz#093ced8370a7fc040d8157dc2b0829f0dffd9806"
   integrity sha512-DjBsFhOMocYccTbtbFW+JD6NSKGofm+odKm1blq9V2yEOL58+rFwlR+RelTIjel8ESVcHwQtgYKQy8YC7BerfQ==
 
-"@naturacosmeticos/natds-rn@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-rn/-/natds-rn-3.0.0.tgz#da644905f865f7cc2be9c53c0693e56cb0b972bf"
-  integrity sha512-4E3sZPtxwkrFy37DLSbVr5I4hjBtahdOf5+DBYtLsueyxFP69X1o2Aqu+oElT6GKA32wgyKdYIoaw+ls6i6PfQ==
+"@naturacosmeticos/natds-rn@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@naturacosmeticos/natds-rn/-/natds-rn-3.0.1.tgz#df606ade7550cbd3529a22903e99298cce4a908d"
+  integrity sha512-M3SzJTIAYGz2XoWxoVEySD//aHFI1vIk2KD8IugaWHXqmW3jNB3DuRyKZZdl9LeVZ0w0HsGHbZmg6G/7Ge7WAQ==
   dependencies:
     "@naturacosmeticos/natds-icons" "0.17.0"
     "@naturacosmeticos/natds-themes" "^0.4.1"
